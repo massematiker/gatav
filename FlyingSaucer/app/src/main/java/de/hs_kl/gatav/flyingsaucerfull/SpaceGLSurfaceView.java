@@ -170,16 +170,16 @@ public class SpaceGLSurfaceView extends GLSurfaceView {
             for (Obstacle obstacle : obstacles) {
                 if (areColliding(ship, obstacle)) {
                     if (obstacle instanceof Asteroid) {
-                        ship.damage(0.1f); // add some damage to the ship
+                        // add some damage to the ship
                         obstaclesToBeRemoved.add(obstacle);
                     }
                     if (obstacle instanceof BorgCube) {
-                        ship.damage(0.2f); // add some more because the borg are
+                         // add some more because the borg are
                         // mighty!
                         obstaclesToBeRemoved.add(obstacle);
                     }
                     if (obstacle instanceof Starship){
-                        ship.resetHealth();
+
                     }
                     //ODOT
                 }
